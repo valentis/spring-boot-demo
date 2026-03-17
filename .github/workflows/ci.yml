@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
+          distribution: 'temurin'       # 어떤 배포판(distribution)을 사용할지 명시
           
       - name: Build with Maven
         run: mvn -B package --file pom.xml
